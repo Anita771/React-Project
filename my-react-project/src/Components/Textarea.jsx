@@ -1,3 +1,9 @@
 export default function Textarea(){
-    return
+    return (
+    <input className="Textarea"
+        Type="text"
+        />
+    
+    );
+
 }
