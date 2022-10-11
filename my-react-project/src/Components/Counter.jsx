@@ -9,6 +9,7 @@ export default function Counter(props){
     function handleTick(){
         setCount(count + 1);
     }
-    return count;
+    return  count;
 
+    
 }

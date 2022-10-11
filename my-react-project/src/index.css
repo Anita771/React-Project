@@ -1,5 +1,11 @@
+
 body {
-  margin: 0;
+  background-color: antiquewhite;
+  background-image: url("./Components/cake.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid thin black;
+  margin: 10mm;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
