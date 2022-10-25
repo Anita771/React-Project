@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function Counter(props){
+export default function Counter(){
     const [count,setCount]= useState(0);
     useEffect(setTimer, [count]);
     function setTimer(){
@@ -9,7 +9,12 @@ export default function Counter(props){
     function handleTick(){
         setCount(count + 1);
     }
-    return  count;
+    
+    return  (
+        <div className="Counter">
+     {count}
+    </div>
+    );
 
     
 }

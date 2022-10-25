@@ -1,23 +1,22 @@
-import Menubar from "./Components/Menubar";
-import Button from "./Components/Button";
-import Textarea from "./Components/Textarea";
-//import Backgroundimage from "./Components/Backgroundimage";
 import Counter from "./Components/Counter";
-import './App.css';
+import Menubar from "./Components/Menubar";
+import List from "./Components/List";
 
-function App() {
+//import Backgroundimage from "./Components/Backgroundimage";
+import './App.css';
+import React from "react";
+
+
+export default function App() {
   return (
-    <div>
-      <Menubar/>
+    <div className="App">
+      <card>
       <Counter/>
-      <div>
-      <Textarea/>
-      <Button/>  
-      </div>
-       
-  
-   </div>
+      <Menubar/>
+      <p>Hello, How may I help you?</p>
+      <List />
+
+      </card>
+       </div>
   );
 }
-
-export default App;

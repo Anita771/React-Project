@@ -1,8 +1,13 @@
+import Button from "./Button"
 export default function Textarea(){
     return (
-    <input className="Textarea"
-        Type="text"
-        />
+        <div className="Textarea">
+    <textarea id="firstText">
+        Hello, How may I help you
+    </textarea>
+    <Button/>
+    </div>
+       
     
     );
 
