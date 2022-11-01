@@ -1,12 +1,16 @@
 import { useState } from "react";
+import './List.css';
 
 let nextId = 0;
 function reply(message) {
-    if (message.includes("Hello", "Hi", "Moi",)) {
+    if (message.includes("Hello")) {
       return "Hello! How May I help you?";
-    } else if (message.includes("Hi")) {
-      return "Hi! How may I help you?";
-    }else if (message.includes("types of cakes")) {
+    }else if (message.includes("Hi")) {
+      return "Hi! How May I help you?";
+    }else if (message.includes("Moi")) {
+      return "Moi! How May I help you?";
+    }
+else if (message.includes("Types of cakes")) {
       return "We have variety of cakes, which one do you like?";
     }else if (message.includes("blackforest")) {
       return "Great to know, yes we do have blackforest in our menu";
@@ -21,25 +25,29 @@ function reply(message) {
 export default function List() {
     
     const [name, setName] = useState('');
-    const [artists, setArtists] = useState([]);
+    const [texts, setTexts] = useState([]);
   
     return (
         <div>
-         <input
+         <input className="inputs"
           value={name}
           onChange={e => setName(e.target.value)}
         />
-        <button onClick={() => {
-          setName('');
-          setArtists([
-            ...artists,
-            { id: nextId++, name: name },
-            { id: nextId++, name: reply(name) }
+        <button 
+          className="Button" 
+          onClick={() => {
+            setName('');
+            setTexts([
+              ...texts,
+              //this prints the input field 
+              { id: nextId++, name: name },
+              //this prints the reply after recieving the user input
+              { id: nextId++, name: reply(name) }
           ]);
-        }} >Add</button>
-        <ul>
-          {artists.map(artist => (
-            <li key={artist.id}>{artist.name}</li>
+        }} >Enter</button>
+        <ul className="li">
+          {texts.map(text => (
+            <li key={text.id}>{text.name}</li>
           ))}
         </ul>
          </div>

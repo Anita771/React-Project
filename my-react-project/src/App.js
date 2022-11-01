@@ -8,15 +8,10 @@ import React from "react";
 
 
 export default function App() {
-  return (
-    <div className="App">
-      <card>
-      <Counter/>
-      <Menubar/>
-      <p>Hello, How may I help you?</p>
-      <List />
-
-      </card>
-       </div>
+  return (< div className="App">
+    <Counter/>
+    <Menubar/>
+    <List/>
+    </div>
   );
 }

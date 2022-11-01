@@ -1,0 +1,24 @@
+li:nth-child(even) {
+    display: flex;
+    background-color: lightgreen;
+    margin-left:0.7in;
+    margin-top: 5mm;
+    padding: 30px;
+    height: 10px;
+    width: 42%;
+    justify-content: right;
+    flex-direction: row-reverse;
+    
+}
+li:nth-child(odd) {
+    display: flex;
+    background-color:lightpink;
+    margin-top: 5mm;
+    margin-left: 0.7in;
+    padding: 30px;
+    height: 10px;
+    width: 42%;
+    justify-content: left;
+    flex-direction: row start;
+
+}
