@@ -18,20 +18,7 @@
     list-style-type: none;
 
 }
-.Counter {
-    display: flex;
-   justify-content: center;
-    background-color:black;
-    color: aliceblue;
-    margin-left:2.5in ;
-    padding: 30px;
-    height: 10px;
-    width: 10%;
-    justify-content: center;
-    
-    
-    
-}
+
 .Menubar {
 
     display: flex;
