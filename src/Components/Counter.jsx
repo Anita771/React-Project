@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function Counter(){
     const [count,setCount]= useState(0);
-    useEffect(setTimer, [count]);
+    useEffect(setTimer, [count, handleTick]);
     function setTimer(){
         setTimeout(handleTick, 1000);
     }
