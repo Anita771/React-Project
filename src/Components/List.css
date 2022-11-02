@@ -1,6 +1,6 @@
 li:nth-child(even) {
     display: flex;
-    background-color: lightgreen;
+    background-color: whitesmoke;
     margin-left:0.7in;
     margin-top: 5mm;
     padding: 30px;
@@ -12,7 +12,7 @@ li:nth-child(even) {
 }
 li:nth-child(odd) {
     display: flex;
-    background-color:lightpink;
+    background-color:rgb(217, 243, 246);
     margin-top: 5mm;
     margin-left: 0.7in;
     padding: 30px;
